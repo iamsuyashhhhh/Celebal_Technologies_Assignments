@@ -66,6 +66,7 @@ df.to_csv("cleaned_ecommerce_dataset.csv", index=False)
 
 1. Open the project folder in PyCharm.
 2. Install the required library using:
+---
 
 ```bash
 pip install pandas
