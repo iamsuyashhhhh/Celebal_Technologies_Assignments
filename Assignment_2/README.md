@@ -264,6 +264,6 @@ From this assignment I got hands-on experience in:
 
 ---
 
-##Conclusion
+## Conclusion
 
 This project gave me experience with SQL-based data analysis using PostgreSQL. By working with a real sales dataset I was able to apply SQL concepts and do meaningful analysis, on customer, product and sales information. The assignment helped me understand database operations better. Showed me how SQL can help businesses make good decisions based on data.
