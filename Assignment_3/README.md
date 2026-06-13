@@ -14,7 +14,7 @@ The objective of this assignment was to explore advanced SQL concepts and apply 
 
 The tasks completed include:
 
-* Importing the Superstore dataset into SQLite using Python.
+* Loading the Superstore dataset into SQLite using Python.
 * Creating normalized tables from raw sales data.
 * Applying Subqueries for data filtering and comparisons.
 * Using Common Table Expressions (CTEs) for reusable calculations.
@@ -30,28 +30,7 @@ The tasks completed include:
 * Pandas
 * SQLite
 * SQL
-* SQLAlchemy
 * PyCharm
-
----
-
-## Dataset
-
-Dataset Used: Sample Superstore Dataset
-
-The dataset contains information related to:
-
-* Orders
-* Customers
-* Products
-* Sales
-* Profit
-* Quantity
-* Categories
-* Regions
-* Order Dates
-
-The dataset consists of thousands of sales transactions and is commonly used for business analytics and SQL practice.
 
 ---
 
@@ -81,6 +60,26 @@ The dataset was imported into SQLite using Python and Pandas.
 * Created a SQLite database connection.
 * Imported the dataset into a table named `superstore_raw`.
 * Verified successful data insertion.
+
+---
+
+## Dataset
+
+Dataset Used: Sample Superstore Dataset
+
+The dataset contains information related to:
+
+* Orders
+* Customers
+* Products
+* Sales
+* Profit
+* Quantity
+* Categories
+* Regions
+* Order Dates
+
+The dataset consists of thousands of sales transactions and is commonly used for business analytics and SQL practice.
 
 ---
 
