@@ -417,44 +417,6 @@ The final warehouse enables analysis of:
 
 ---
 
-# 💡 Future Ideas
-
-This project can be further extended with additional capabilities such as:
-
-### Data Engineering
-
-- Automated workflow scheduling using Databricks Workflows or Apache Airflow.
-- Real-time data ingestion using Apache Kafka or Spark Structured Streaming.
-- Automated schema evolution and monitoring.
-- Advanced data quality dashboards and alerting.
-- Performance optimization using Delta table partitioning and Z-Ordering.
-
-### Data Warehouse
-
-- Add additional dimensions such as:
-  - Store Dimension
-  - Employee Dimension
-  - Promotion Dimension
-- Create aggregate tables for faster reporting.
-- Introduce slowly changing business attributes where required.
-
-### Analytics
-
-- Connect the Gold Layer to Power BI or Tableau.
-- Build interactive executive dashboards.
-- Customer segmentation analysis.
-- Regional sales dashboards.
-- Product profitability dashboards.
-- Sales forecasting using Machine Learning.
-
-### Cloud & DevOps
-
-- Deploy on Azure Databricks or AWS Databricks.
-- CI/CD using GitHub Actions.
-- Automated testing for ETL pipelines.
-- Separate Development, Testing, and Production environments.
-
----
 
 # 📚 Learning Outcomes
 
