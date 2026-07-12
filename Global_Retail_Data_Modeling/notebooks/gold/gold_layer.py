@@ -201,23 +201,14 @@ fact_sales = (
     )
 
     .select(
-
         col("order_number"),
-
         col("customer_sk"),
-
         col("product_sk"),
-
         col("order_date"),
-
         col("ship_date"),
-
         col("due_date"),
-
         col("quantity"),
-
         col("price"),
-
         col("sales_amount")
 
     )
@@ -233,9 +224,9 @@ fact_sales.write \
 
 # COMMAND ----------
 
-print("="*70)
+
 print("Gold Tables Created Successfully")
-print("="*70)
+print("="*30)
 
 spark.sql("SHOW TABLES IN gold").show()
 

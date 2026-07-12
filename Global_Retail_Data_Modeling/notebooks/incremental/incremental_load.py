@@ -75,19 +75,15 @@ VALUES (
 # COMMAND ----------
 # Validation
 
-print("="*70)
 print("Incremental Load Completed Successfully")
-print("="*70)
 
-print("Total Records After MERGE :",
-      spark.table("silver.sales").count())
+print("Total Records After MERGE :",spark.table("silver.sales").count())
 
 # COMMAND ----------
 
 display(
     spark.sql("""
-    SELECT *
-    FROM silver.sales
+    SELECT * FROM silver.sales
     WHERE order_number IN (
         'SO999901',
         'SO999902',

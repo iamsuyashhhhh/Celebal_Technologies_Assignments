@@ -1,43 +1,31 @@
 # Databricks notebook source
 # MAGIC %sql
-# MAGIC SELECT
-# MAGIC SUM(sales_amount) AS Total_Revenue
-# MAGIC FROM gold.fact_sales;
+# MAGIC SELECT SUM(sales_amount) AS Total_Revenue FROM gold.fact_sales;
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT
-# MAGIC SUM(sales_amount) AS Total_Revenue
-# MAGIC FROM gold.fact_sales;
+# MAGIC SELECT SUM(sales_amount) AS Total_Revenue FROM gold.fact_sales;
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT
-# MAGIC COUNT(*) AS Customers
-# MAGIC FROM gold.dim_customer;
+# MAGIC SELECT COUNT(*) AS Customers FROM gold.dim_customer;
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT
-# MAGIC COUNT(*) AS Products
-# MAGIC FROM gold.dim_product;
+# MAGIC SELECT COUNT(*) AS Products FROM gold.dim_product;
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT
-# MAGIC ROUND(AVG(sales_amount),2)
-# MAGIC FROM gold.fact_sales;
+# MAGIC SELECT ROUND(AVG(sales_amount),2) FROM gold.fact_sales;
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT
-# MAGIC customer_sk,
-# MAGIC SUM(sales_amount) Revenue
+# MAGIC SELECT customer_sk, SUM(sales_amount) Revenue
 # MAGIC FROM gold.fact_sales
 # MAGIC GROUP BY customer_sk
 # MAGIC ORDER BY Revenue DESC
@@ -46,8 +34,7 @@
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT
-# MAGIC product_sk,
+# MAGIC SELECT product_sk,
 # MAGIC SUM(sales_amount) Revenue
 # MAGIC FROM gold.fact_sales
 # MAGIC GROUP BY product_sk
@@ -57,38 +44,18 @@
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT
-# MAGIC
-# MAGIC p.product_line,
-# MAGIC
-# MAGIC SUM(f.sales_amount) Revenue
-# MAGIC
+# MAGIC SELECT p.product_line, SUM(f.sales_amount) Revenue
 # MAGIC FROM gold.fact_sales f
-# MAGIC
-# MAGIC JOIN gold.dim_product p
-# MAGIC
-# MAGIC ON f.product_sk=p.product_sk
-# MAGIC
+# MAGIC JOIN gold.dim_product p ON f.product_sk=p.product_sk
 # MAGIC GROUP BY p.product_line
-# MAGIC
 # MAGIC ORDER BY Revenue DESC;
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT *
-# MAGIC
-# MAGIC FROM gold.fact_sales
-# MAGIC
-# MAGIC ORDER BY sales_amount DESC
-# MAGIC
-# MAGIC LIMIT 10;
+# MAGIC SELECT * FROM gold.fact_sales ORDER BY sales_amount DESC LIMIT 10;
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT
-# MAGIC
-# MAGIC SUM(quantity)
-# MAGIC
-# MAGIC FROM gold.fact_sales;
+# MAGIC SELECT SUM(quantity) FROM gold.fact_sales;

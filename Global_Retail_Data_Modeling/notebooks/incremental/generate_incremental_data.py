@@ -107,10 +107,7 @@ columns = [
 
 # COMMAND ----------
 
-incremental_df = spark.createDataFrame(
-    incremental_data,
-    columns
-)
+incremental_df = spark.createDataFrame(incremental_data,columns)
 
 # COMMAND ----------
 
@@ -127,10 +124,7 @@ incremental_df.write \
 
 # COMMAND ----------
 
-print("="*60)
+
 print("Incremental Dataset Generated Successfully")
-print("="*60)
-
 print(f"Total Records : {incremental_df.count()}")
-
 display(incremental_df)

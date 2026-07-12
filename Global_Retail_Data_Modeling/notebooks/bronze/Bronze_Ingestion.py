@@ -90,52 +90,41 @@ print(f"Category Records : {erp_category_df.count():,}")
 # COMMAND ----------
 
 display(crm_customer_df)
-
 display(crm_product_df)
-
 display(crm_sales_df)
-
 display(erp_customer_df)
-
 display(erp_location_df)
-
 display(erp_category_df)
 
 # COMMAND ----------
 
-print("="*60)
 print("CRM CUSTOMER SCHEMA")
-print("="*60)
+print("="*25)
 
 crm_customer_df.printSchema()
 
-print("="*60)
 print("CRM PRODUCT SCHEMA")
-print("="*60)
+print("="*25)
 
 crm_product_df.printSchema()
 
-print("="*60)
 print("CRM SALES SCHEMA")
-print("="*60)
+print("="*25)
 
 crm_sales_df.printSchema()
 
-print("="*60)
 print("ERP CUSTOMER SCHEMA")
-print("="*60)
+print("="*25)
 
 erp_customer_df.printSchema()
 
-print("="*60)
 print("ERP LOCATION SCHEMA")
-print("="*60)
+print("="*25)
 
 erp_location_df.printSchema()
 
-print("="*60)
 print("ERP CATEGORY SCHEMA")
-print("="*60)
+print("="*25)
 
 erp_category_df.printSchema()
 
@@ -181,8 +170,6 @@ erp_category_df.write \
 
 # COMMAND ----------
 
-print("="*60)
 print("BRONZE TABLES CREATED SUCCESSFULLY")
-print("="*60)
 
 spark.sql("SHOW TABLES IN bronze").show(truncate=False)
