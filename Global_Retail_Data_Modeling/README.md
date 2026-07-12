@@ -199,15 +199,13 @@ Global_Retail_Data_Modeling/
 ├── sql/
 │ ├── business_queries.sql
 │ ├── data_validation.sql
-│ ├── star_schema.sql
-│ └── incremental_merge.sql
+│ └── star_schema.sql
 │
 ├── docs/
 │ ├── architecture.md
 │ ├── data_dictionary.md
 │ └── project_workflow.md
 │
-├── screenshots/
 │
 └── README.md
 
@@ -491,14 +489,11 @@ notebooks/
 ├── Gold Layer
 ├── Incremental Loading
 └── Analytics
-
 sql/
 │
 ├── Business Queries
 ├── Data Validation
 ├── Star Schema
-└── Incremental MERGE
-
 docs/
 │
 ├── Architecture
